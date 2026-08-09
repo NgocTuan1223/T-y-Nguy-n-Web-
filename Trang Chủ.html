@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đặc Sản Tây Nguyên</title>
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ĐẶC SẢN TÂY NGUYÊN</h1>
+      <nav>
+        <a href="Trang Chủ.html">Trang Chủ</a>
+        <a href="Giới thiệu.html">Giới thiệu</a>
+        <a href="Sản phẩm.html">Sản phẩm</a>
+        <a href="Nguồn gốc.html">Nguồn gốc</a>
+        <a href="Định hướng đặt hàng.html">Định hướng đặt hàng</a>
+        <a href="contact.html">Liên hệ</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Giới thiệu Tây Nguyên & Nguồn gốc -->
+      <section id="about">
+        <h2>Giới thiệu về Tây Nguyên</h2>
+        <p>
+          Tây Nguyên là vùng đất đỏ bazán mỡ màu, nơi nổi tiếng với những cánh
+          rừng bạt ngàn, các đồi cà phê trải dài và nét văn hóa cồng chiêng độc
+          đáo. Các sản phẩm tại đây đều mang đậm bản sắc vùng cao nhiệt đới.
+        </p>
+      </section>
+
+      <!-- Danh sách & Phân loại sản phẩm -->
+      <section id="products">
+        <h2>Danh sách sản phẩm</h2>
+        <div id="product-list">
+          <!-- Dữ liệu từ products.json sẽ được load vào đây qua JS -->
+        </div>
+      </section>
+
+      <!-- Định hướng phát triển -->
+      <section id="roadmap">
+        <h2>Định hướng phát triển chức năng đặt hàng</h2>
+        <ul>
+          <li>Bổ sung nút "Thêm vào giỏ hàng" cho từng sản phẩm.</li>
+          <li>Xây dựng trang xem giỏ hàng và tính tổng tiền.</li>
+          <li>
+            Tích hợp form điền thông tin giao hàng và gửi đơn lên hệ thống
+            backend.
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script>
+      let allProducts = [];
+
+      // Tải dữ liệu từ JSON
+      fetch("data/products.json")
+        .then((response) => response.json())
+        .then((data) => {
+          allProducts = data;
+          displayProducts(allProducts);
+        })
+        .catch((error) => console.error("Lỗi tải dữ liệu:", error));
+
+      // Hiển thị sản phẩm
+      function displayProducts(products) {
+        const container = document.getElementById("product-list");
+        container.innerHTML = "";
+        products.forEach((p) => {
+          container.innerHTML += `
+                    <div class="product-item">
+                        <span class="badge">${p.category}</span>
+                        <h3>${p.name}</h3>
+                        <p><strong>Xuất xứ:</strong> ${p.origin}</p>
+                        <p><strong>Giá:</strong> <span class="price">${p.price}</span></p>
+                        <p>${p.description}</p>
+                    </div>
+                `;
+        });
+      }
+
+      // Chức năng phân loại
+      function filterProducts() {
+        const selected = document.getElementById("category-select").value;
+        if (selected === "all") {
+          displayProducts(allProducts);
+        } else {
+          const filtered = allProducts.filter((p) => p.category === selected);
+          displayProducts(filtered);
+        }
+      }
+    </script>
+  </body>
+</html>

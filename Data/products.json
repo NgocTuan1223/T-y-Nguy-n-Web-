@@ -1,0 +1,92 @@
+[
+  {
+    "id": "TN001",
+    "name": "Cà phê Robusta Đắk Lắk",
+    "category": "Cà phê",
+    "origin": "Buôn Ma Thuột, Đắk Lắk",
+    "price": 180000,
+    "unit": "Hộp 500g",
+    "description": "Đậm đà, hương thơm tự nhiên, chuẩn vị Tây Nguyên."
+  },
+  {
+    "id": "TN002",
+    "name": "Cà phê Arabica Cầu Đất",
+    "category": "Cà phê",
+    "origin": "Đà Lạt, Lâm Đồng",
+    "price": 250000,
+    "unit": "Hộp 500g",
+    "description": "Vị chua thanh, hậu vị ngọt, hương thơm phong phú."
+  },
+  {
+    "id": "TN003",
+    "name": "Mật ong hoa cà phê",
+    "category": "Đặc sản thiên nhiên",
+    "origin": "Gia Lai",
+    "price": 200000,
+    "unit": "Chai 1 Litre",
+    "description": "Mật ong nguyên chất thu hoạch vào mùa hoa cà phê nở."
+  },
+  {
+    "id": "TN004",
+    "name": "Tiêu đen Chư Sê",
+    "category": "Gia vị",
+    "origin": "Chư Sê, Gia Lai",
+    "price": 120000,
+    "unit": "Túi 500g",
+    "description": "Hạt tiêu cay nồng, thơm đặc trưng."
+  },
+  {
+    "id": "TN005",
+    "name": "Măng khô Gia Lai",
+    "category": "Nông sản",
+    "origin": "Gia Lai",
+    "price": 300000,
+    "unit": "Túi 1kg",
+    "description": "Măng rừng phơi khô tự nhiên, không chất bảo quản."
+  },
+  {
+    "id": "TN006",
+    "name": "Rượu Cần Y Mên",
+    "category": "Rượu đặc sản",
+    "origin": "Đắk Lắk",
+    "price": 350000,
+    "unit": "Bình 5 Litre",
+    "description": "Rượu truyền thống lên men từ lá cây rừng."
+  },
+  {
+    "id": "TN007",
+    "name": "Bơ 034 Lâm Đồng",
+    "category": "Trái cây",
+    "origin": "Bảo Lộc, Lâm Đồng",
+    "price": 70000,
+    "unit": "Kg",
+    "description": "Bơ dẻo, béo ngậy, hạt nhỏ."
+  },
+  {
+    "id": "TN008",
+    "name": "Hạt Macca Kon Tum",
+    "category": "Hạt dinh dưỡng",
+    "origin": "Kon Tum",
+    "price": 280000,
+    "unit": "Hộp 500g",
+    "description": "Sấy nứt vỏ, sấy chín tự nhiên."
+  },
+  {
+    "id": "TN009",
+    "name": "Sâm Ngọc Linh ngâm mật ong",
+    "category": "Dược liệu",
+    "origin": "Nam Trà My / Kon Tum",
+    "price": 1500000,
+    "unit": "Hũ 200ml",
+    "description": "Bồi bổ sức khỏe, tăng cường sức đề kháng."
+  },
+  {
+    "id": "TN010",
+    "name": "Thịt bò một nắng Krông Pa",
+    "category": "Thực phẩm khô",
+    "origin": "Krông Pa, Gia Lai",
+    "price": 600000,
+    "unit": "Kg",
+    "description": "Thịt bò đùi tươi ướp gia vị phơi qua một nắng."
+  }
+]
