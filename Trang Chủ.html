@@ -1,177 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Đặc Sản Tây Nguyên - Nông Sản Chính Hiệu</title>
-    <link rel="stylesheet" href="Css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="Css/style.css" />
+    <script src="Data/main.js"></script>
+  </head>
+  <body>
     <header>
-        <h1>NÔNG SẢN TÂY NGUYÊN</h1>
-        <p>Hương vị tự nhiên từ đại ngàn</p>
+      <h1>NÔNG SẢN TÂY NGUYÊN</h1>
+      <p>Hương vị tự nhiên từ đại ngàn</p>
     </header>
 
     <nav>
-        <a href="#gioi-thieu">Giới Thiệu</a>
-        <a href="#san-pham">Sản Phẩm</a>
-        <a href="#dinh-huong">Định Hướng</a>
-        <a href="#lien-he">Liên Hệ</a>
+      <a href="Giới thiệu.html">Giới Thiệu</a>
+      <a href="Sản Phẩm.html">Sản Phẩm</a>
+      <a href="#dinh-huong">Định Hướng</a>
+      <a href="#lien-he">Liên Hệ</a>
     </nav>
 
     <div class="container">
+      <!-- 1. Giới thiệu Tây Nguyên -->
+      <section id="gioi-thieu" class="section">
+        <h2>Giới Thiệu Tây Nguyên</h2>
+        <p>
+          Tây Nguyên là vùng đất bạt ngàn nắng gió với thổ nhưỡng đất đỏ bazan
+          phì nhiêu, nguồn nước trong lành và khí hậu thuận lợi. Nơi đây nổi
+          tiếng khắp cả nước và thế giới với các loại nông sản có hương vị đậm
+          đà, chất lượng cao như Cà phê, Hồ tiêu, Ca cao và các loại hạt dinh
+          dưỡng.
+        </p>
+      </section>
 
-        <!-- 1. Giới thiệu Tây Nguyên -->
-        <section id="gioi-thieu" class="section">
-            <h2>Giới Thiệu Tây Nguyên</h2>
-            <p>Tây Nguyên là vùng đất bạt ngàn nắng gió với thổ nhưỡng đất đỏ bazan phì nhiêu, nguồn nước trong lành và khí hậu thuận lợi. Nơi đây nổi tiếng khắp cả nước và thế giới với các loại nông sản có hương vị đậm đà, chất lượng cao như Cà phê, Hồ tiêu, Ca cao và các loại hạt dinh dưỡng.</p>
-        </section>
+      <!-- 2. Danh sách sản phẩm + Bộ lọc phân loại -->
+      <section id="san-pham" class="section">
+        <h2>Danh Sách Sản Phẩm Đặc Sản</h2>
 
-        <!-- 2. Danh sách ít nhất 10 sản phẩm + Phân loại + Nguồn gốc + Nút mua hàng -->
-        <section id="san-pham" class="section">
-            <h2>Danh Sách Sản Phẩm Đặc Sản</h2>
-            <div class="product-grid">
+        <!-- Thanh lọc Phân loại Sản phẩm -->
+        <div class="category-filter" id="category-filter">
+          <!-- Các nút lọc danh mục sẽ tự động tạo từ JavaScript dựa trên products.json -->
+        </div>
 
-                <div class="product-card">
-                    <div>
-                        <div class="product-img">Hình Cà Phê</div>
-                        <span class="category-tag">Nông sản chế biến</span>
-                        <div class="product-title">Cà Phê Robusta Măng Đen</div>
-                        <div class="product-origin">📍 Nguồn gốc: Kon Tum</div>
-                        <div class="product-price">150.000đ / kg</div>
-                    </div>
-                    <button class="btn-buy" onclick="buyProduct('Cà Phê Robusta Măng Đen')">Mua hàng</button>
-                </div>
+        <!-- Khung chứa danh sách sản phẩm -->
+        <div class="product-grid" id="product-grid">
+          <!-- Dữ liệu sản phẩm hiển thị từ JS -->
+        </div>
+      </section>
 
-                <div class="product-card">
-                    <div>
-                        <div class="product-img">Hình Hồ Tiêu</div>
-                        <span class="category-tag">Gia vị</span>
-                        <div class="product-title">Hồ Tiêu Đen Chư Sê</div>
-                        <div class="product-origin">📍 Nguồn gốc: Gia Lai</div>
-                        <div class="product-price">180.000đ / kg</div>
-                    </div>
-                    <button class="btn-buy" onclick="buyProduct('Hồ Tiêu Đen Chư Sê')">Mua hàng</button>
-                </div>
+      <!-- 3. Định hướng phát triển chức năng đặt hàng -->
+      <section id="dinh-huong" class="section">
+        <h2>Định Hướng Phát Triển Chức Năng Đặt Hàng</h2>
+        <ul style="padding-left: 20px">
+          <li>
+            <strong>Giai đoạn 1 (Hiện tại):</strong> Tách dự án HTML, CSS, JS,
+            JSON và nâng cấp bộ lọc Phân loại sản phẩm tương tác linh hoạt.
+          </li>
+          <li>
+            <strong>Giai đoạn 2:</strong> Xây dựng giỏ hàng (Cart) lưu trữ danh
+            sách sản phẩm người dùng đã chọn mua, hỗ trợ tăng/giảm số lượng.
+          </li>
+          <li>
+            <strong>Giai đoạn 3:</strong> Tích hợp trang Thanh toán (Checkout)
+            thu thập thông tin giao hàng của khách hàng (Tên, SĐT, Địa chỉ).
+          </li>
+          <li>
+            <strong>Giai đoạn 4:</strong> Kết nối Cổng thanh toán (VNPay, Momo,
+            Chuyển khoản ngân hàng qua QR Code) và hệ thống Quản lý đơn hàng cho
+            Admin.
+          </li>
+        </ul>
+      </section>
 
-                <div class="product-card">
-                    <div>
-                        <div class="product-img">Hình Hạt Macca</div>
-                        <span class="category-tag">Hạt dinh dưỡng</span>
-                        <div class="product-title">Hạt Macca Sấy Lâm Hà</div>
-                        <div class="product-origin">📍 Nguồn gốc: Lâm Đồng</div>
-                        <div class="product-price">220.000đ / hũ 500g</div>
-                    </div>
-                    <button class="btn-buy" onclick="buyProduct('Hạt Macca Sấy Lâm Hà')">Mua hàng</button>
-                </div>
-
-                <div class="product-card">
-                    <div>
-                        <div class="product-img">Hình Bột Ca Cao</div>
-                        <span class="category-tag">Nông sản chế biến</span>
-                        <div class="product-title">Bột Ca Cao Nguyên Chất</div>
-                        <div class="product-origin">📍 Nguồn gốc: Đắk Lắk</div>
-                        <div class="product-price">120.000đ / gói 500g</div>
-                    </div>
-                    <button class="btn-buy" onclick="buyProduct('Bột Ca Cao Nguyên Chất')">Mua hàng</button>
-                </div>
-
-                <div class="product-card">
-                    <div>
-                        <div class="product-img">Hình Bơ Booth</div>
-                        <span class="category-tag">Trái cây tươi</span>
-                        <div class="product-title">Bơ Booth Đắk Lắk</div>
-                        <div class="product-origin">📍 Nguồn gốc: Đắk Lắk</div>
-                        <div class="product-price">60.000đ / kg</div>
-                    </div>
-                    <button class="btn-buy" onclick="buyProduct('Bơ Booth Đắk Lắk')">Mua hàng</button>
-                </div>
-
-                <div class="product-card">
-                    <div>
-                        <div class="product-img">Hình Sầu Riêng</div>
-                        <span class="category-tag">Trái cây tươi</span>
-                        <div class="product-title">Sầu Riêng Ri6 Krông Pắc</div>
-                        <div class="product-origin">📍 Nguồn gốc: Đắk Lắk</div>
-                        <div class="product-price">95.000đ / kg</div>
-                    </div>
-                    <button class="btn-buy" onclick="buyProduct('Sầu Riêng Ri6 Krông Pắc')">Mua hàng</button>
-                </div>
-
-                <div class="product-card">
-                    <div>
-                        <div class="product-img">Hình Mật Ong</div>
-                        <span class="category-tag">Đặc sản tự nhiên</span>
-                        <div class="product-title">Mật Ong Hoa Cà Phê</div>
-                        <div class="product-origin">📍 Nguồn gốc: Đắk Nông</div>
-                        <div class="product-price">160.000đ / chai 1L</div>
-                    </div>
-                    <button class="btn-buy" onclick="buyProduct('Mật Ong Hoa Cà Phê')">Mua hàng</button>
-                </div>
-
-                <div class="product-card">
-                    <div>
-                        <div class="product-img">Hình Hạt Điều</div>
-                        <span class="category-tag">Hạt dinh dưỡng</span>
-                        <div class="product-title">Hạt Điều Rang Salt</div>
-                        <div class="product-origin">📍 Nguồn gốc: Gia Lai</div>
-                        <div class="product-price">140.000đ / hũ 500g</div>
-                    </div>
-                    <button class="btn-buy" onclick="buyProduct('Hạt Điều Rang Salt')">Mua hàng</button>
-                </div>
-
-                <div class="product-card">
-                    <div>
-                        <div class="product-img">Hình Trà Oolong</div>
-                        <span class="category-tag">Nông sản chế biến</span>
-                        <div class="product-title">Trà Oolong Bảo Lộc</div>
-                        <div class="product-origin">📍 Nguồn gốc: Lâm Đồng</div>
-                        <div class="product-price">200.000đ / gói 250g</div>
-                    </div>
-                    <button class="btn-buy" onclick="buyProduct('Trà Oolong Bảo Lộc')">Mua hàng</button>
-                </div>
-
-                <div class="product-card">
-                    <div>
-                        <div class="product-img">Hình Chuối Laba</div>
-                        <span class="category-tag">Trái cây tươi</span>
-                        <div class="product-title">Chuối Laba Đà Lạt</div>
-                        <div class="product-origin">📍 Nguồn gốc: Lâm Đồng</div>
-                        <div class="product-price">35.000đ / kg</div>
-                    </div>
-                    <button class="btn-buy" onclick="buyProduct('Chuối Laba Đà Lạt')">Mua hàng</button>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- 3. Định hướng phát triển chức năng đặt hàng -->
-        <section id="dinh-huong" class="section">
-            <h2>Định Hướng Phát Triển Chức Năng Đặt Hàng</h2>
-            <ul style="padding-left: 20px;">
-                <li><strong>Giai đoạn 1 (Hiện tại):</strong> Hiển thị giao diện danh sách sản phẩm, giá cả và tích hợp nút Mua hàng cơ bản.</li>
-                <li><strong>Giai đoạn 2:</strong> Xây dựng giỏ hàng (Cart) lưu trữ danh sách sản phẩm người dùng đã chọn mua, hỗ trợ tăng/giảm số lượng.</li>
-                <li><strong>Giai đoạn 3:</strong> Tích hợp trang Thanh toán (Checkout) thu thập thông tin giao hàng của khách hàng (Tên, SĐT, Địa chỉ).</li>
-                <li><strong>Giai đoạn 4:</strong> Kết nối Cổng thanh toán (VNPay, Momo, Chuyển khoản ngân hàng qua QR Code) và hệ thống Quản lý đơn hàng cho Admin.</li>
-            </ul>
-        </section>
-
-        <!-- 4. Trang liên hệ -->
-        <section id="lien-he" class="section">
-            <h2>Thông Tin Liên Hệ</h2>
-            <p><strong>Dự án Website Đặc Sản Tây Nguyên</strong></p>
-            <p>📍 Địa chỉ: TP. Buôn Ma Thuột, Tỉnh Đắk Lắk</p>
-            <p>📞 Điện thoại: 0900 123 456</p>
-            <p>✉️ Email: contact@dacsantaynguyen.vn</p>
-        </section>
-
+      <!-- 4. Trang liên hệ -->
+      <section id="lien-he" class="section">
+        <h2>Thông Tin Liên Hệ</h2>
+        <p><strong>Dự án Website Đặc Sản Tây Nguyên</strong></p>
+        <p>📍 Địa chỉ: TP. Buôn Ma Thuột, Tỉnh Đắk Lắk</p>
+        <p>📞 Điện thoại: 08882354325</p>
+        <p>✉️ Email: taynguyen@dacsantaynguyen.vn</p>
+      </section>
     </div>
 
     <footer>
-        <p>&copy; 2026 Nhóm Phát Triển Website Tây Nguyên - Chương 1</p>
+      <p>&copy; 2026 Nhóm Phát Triển Website Tây Nguyên - Chương 1</p>
     </footer>
-
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
