@@ -6,7 +6,7 @@ const allProducts = [
     category: "Nông sản chế biến",
     origin: "Kon Tum",
     price: "150.000đ / kg",
-    image_placeholder: "Hình Cà Phê",
+    image_placeholder: `<img src="https://cdn.hstatic.net/products/200001035003/z7788529417448_e1e09b84d2a8ac561223cec81953ec98_0cc0b612b4b0464387baa4a76e7bad39_master.jpg">`,
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ const allProducts = [
     category: "Gia vị",
     origin: "Gia Lai",
     price: "180.000đ / kg",
-    image_placeholder: "Hình Hồ Tiêu",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhwNFW4ojgxusBvSzpJmWIy3QewO9prNeTNYqCnovDMQ&s=10">`,
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const allProducts = [
     category: "Hạt dinh dưỡng",
     origin: "Lâm Đồng",
     price: "220.000đ / hũ 500g",
-    image_placeholder: "Hình Hạt Macca",
+    image_placeholder: `<img src="https://maccakimlien.com/vnt_upload/about/Macca_Kim_Lien.jpg">`,
   },
   {
     id: 4,
@@ -30,7 +30,7 @@ const allProducts = [
     category: "Nông sản chế biến",
     origin: "Đắk Lắk",
     price: "120.000đ / gói 500g",
-    image_placeholder: "Hình Bột Ca Cao",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXg_m3YxAFcIu_f7muXCB7kgpfAVrx-scm3fp5kIycOw&s=10">`,
   },
   {
     id: 5,
@@ -38,7 +38,7 @@ const allProducts = [
     category: "Trái cây tươi",
     origin: "Đắk Lắk",
     price: "60.000đ / kg",
-    image_placeholder: "Hình Bơ Booth",
+    image_placeholder: `<img src="https://file.hstatic.net/200000377165/file/bo-booth-2_grande.png">`,
   },
   {
     id: 6,
@@ -46,7 +46,7 @@ const allProducts = [
     category: "Trái cây tươi",
     origin: "Đắk Lắk",
     price: "95.000đ / kg",
-    image_placeholder: "Hình Sầu Riêng",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTualta7TaCL4Da9C5lF2zF_Le99Vl-CGMrscHY8qhEIuxsKx_AURu0SOpB&s=10">`,
   },
   {
     id: 7,
@@ -54,7 +54,7 @@ const allProducts = [
     category: "Đặc sản tự nhiên",
     origin: "Đắk Nông",
     price: "160.000đ / chai 1L",
-    image_placeholder: "Hình Mật Ong",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0rptY9hq8MPPPDT26dovKq4TGYRZGmeg9PPmVftEA-A&s=10">`,
   },
   {
     id: 8,
@@ -62,7 +62,7 @@ const allProducts = [
     category: "Hạt dinh dưỡng",
     origin: "Gia Lai",
     price: "140.000đ / hũ 500g",
-    image_placeholder: "Hình Hạt Điều",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnGxqprvlOTyyfZ-8LFzL8mwE0eDaIgDl-VtlTmTuY0A&s=10">`,
   },
   {
     id: 9,
@@ -70,7 +70,7 @@ const allProducts = [
     category: "Trà & Đồ uống",
     origin: "Lâm Đồng",
     price: "200.000đ / gói 250g",
-    image_placeholder: "Hình Trà Oolong",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhwNFW4ojgxusBvSzpJmWIy3QewO9prNeTNYqCnovDMQ&s=10">`,
   },
   {
     id: 10,
@@ -78,7 +78,7 @@ const allProducts = [
     category: "Trái cây tươi",
     origin: "Lâm Đồng",
     price: "35.000đ / kg",
-    image_placeholder: "Hình Chuối Laba",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMIP-gKNUozcJwIAsIzoJ2-gXI_RKbj-Pu_hfPKsr5OQ&s=10">`,
   },
   {
     id: 11,
@@ -86,7 +86,7 @@ const allProducts = [
     category: "Nông sản chế biến",
     origin: "Lâm Đồng",
     price: "250.000đ / kg",
-    image_placeholder: "Hình Cà Phê Arabica",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUC-sbTxca8WRfQkKWZFyr22hPn7s_SX5vQasijCBV9w&s=10">`,
   },
   {
     id: 12,
@@ -94,7 +94,7 @@ const allProducts = [
     category: "Dược liệu",
     origin: "Kon Tum",
     price: "3.500.000đ / 100g",
-    image_placeholder: "Hình Sâm Ngọc Linh",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz4h3oJKn-nxLRcwRORyyrtJ0od39S9CGxR4d0s7lwzA&s=10">`,
   },
   {
     id: 13,
@@ -102,7 +102,7 @@ const allProducts = [
     category: "Đặc sản tự nhiên",
     origin: "Kon Tum",
     price: "280.000đ / kg",
-    image_placeholder: "Hình Măng Khô",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXzrHWPKfswUQpM2Gj4cdvJcrwkr93SRWRz4hNJSfpdA&s=10">`,
   },
   {
     id: 14,
@@ -110,7 +110,7 @@ const allProducts = [
     category: "Gia vị",
     origin: "Đắk Nông",
     price: "90.000đ / hũ 200g",
-    image_placeholder: "Hình Mắc Khén",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0DkhXoJnXDVx7-0BNC1yZOmNwC8kTOjhQJv13axZgjg&s=10">`,
   },
   {
     id: 15,
@@ -118,7 +118,7 @@ const allProducts = [
     category: "Hạt dinh dưỡng",
     origin: "Gia Lai",
     price: "110.000đ / hũ 250g",
-    image_placeholder: "Hình Hạt Sachi",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB20LIpzFibaDfsd6yhp4sr1SYqFfFuQrBDjml2uOIyw&s=10">`,
   },
   {
     id: 16,
@@ -126,7 +126,7 @@ const allProducts = [
     category: "Trà & Đồ uống",
     origin: "Đắk Lắk",
     price: "320.000đ / bình 5L",
-    image_placeholder: "Hình Rượu Cần",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl9tfmhnFx2aaB3g29HTn93GEWzPdfH8br5a6wOQE7hg&s">`,
   },
   {
     id: 17,
@@ -134,7 +134,7 @@ const allProducts = [
     category: "Trái cây tươi",
     origin: "Gia Lai",
     price: "45.000đ / kg",
-    image_placeholder: "Hình Chanh Dây",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOB28_FljJwCqtC0Tr8MpLFU_s4cPfIqG6cjTludhf0Q&s=10">`,
   },
   {
     id: 18,
@@ -142,7 +142,7 @@ const allProducts = [
     category: "Dược liệu",
     origin: "Đắk Lắk",
     price: "130.000đ / hũ 500g",
-    image_placeholder: "Hình Bột Nghệ",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFDXvpjtIyxOte-5v8EBAh_zVAC7U9P4ZaYqUMXmiVYg&s=10">`,
   },
   {
     id: 19,
@@ -150,7 +150,7 @@ const allProducts = [
     category: "Nông sản chế biến",
     origin: "Gia Lai",
     price: "550.000đ / kg",
-    image_placeholder: "Hình Bò Một Nắng",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp8cKPgn5oDYsMhfRGuE-y4mh8X8zhc8ZiG3mCho4aoQ&s">`,
   },
   {
     id: 20,
@@ -158,7 +158,7 @@ const allProducts = [
     category: "Dược liệu",
     origin: "Kon Tum",
     price: "1.200.000đ / kg",
-    image_placeholder: "Hình Nấm Lim Xanh",
+    image_placeholder: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8WM_RdWw8uQgk6t7xH4tuxDOxykZ_seGvwXWnmj8Erg&s=10">`,
   },
 ];
 
@@ -229,4 +229,8 @@ function renderProducts(products) {
 
 function buyProduct(productName) {
   alert("Đã thêm '" + productName + "' vào giỏ hàng!");
+}
+
+function addToCart(productName) {
+  alert("Đã lưu '" + productName + "' vào giỏ hàng để bạn tiếp tục mua sắm!");
 }

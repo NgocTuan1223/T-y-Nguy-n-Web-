@@ -14,6 +14,7 @@ tay-nguyen-specialties/
 ├── css/
 │   └── style.css           # File định dạng giao diện chung
 ├── data/
+    └── main.js
 │   └── products.json       # Tập tin chứa dữ liệu 10+ đặc sản
 └── README.md               # Tài liệu dự án, phân công & nhật ký tiến độ
 ```
